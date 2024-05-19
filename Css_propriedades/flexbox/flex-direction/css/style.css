@@ -1,0 +1,85 @@
+/*
+    !FLEXBOX!
+
+    flex-direction: row; (linha)
+    flex-direction: row-reverse; (linha reversa)
+    flex-direction: column; (coluna)
+    flex-direction: column-reverse; (coluna reversa)
+*/
+
+.container-row{
+    background: bisque;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex; /* Exemplo de flexbox*/ /*Ao usar flex você muda a ordem, em vez de vertical podendo colocar horizontal*/
+    flex-direction: row;
+
+}
+
+.container-row-reverse{
+    background: bisque;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex; /* Exemplo de flexbox*/ /*Ao usar flex você muda a ordem, em vez de vertical podendo colocar horizontal*/
+    flex-direction: row-reverse;
+}
+.container-column{
+    background: bisque;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex; /* Exemplo de flexbox*/ /*Ao usar flex você muda a ordem, em vez de vertical podendo colocar horizontal*/
+    flex-direction: column;
+}
+.container-column-reverse{
+    background: bisque;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex; /* Exemplo de flexbox*/ /*Ao usar flex você muda a ordem, em vez de vertical podendo colocar horizontal*/
+    flex-direction: column-reverse;
+}
+
+
+.bloco-1{
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: rgb(211, 241, 255);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.bloco-2{
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: rgb(255, 182, 249);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.bloco-3{
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: rgb(255, 151, 151);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+

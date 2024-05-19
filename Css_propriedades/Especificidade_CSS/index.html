@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        h1{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LEMBRAR QUE EXISTE UMA ORDEM DE PRIORIADE NO CSS -->
+
+    <div class="red">
+        <h1 style="background: green;">
+            Meu primeiro CSS
+        </h1>    
+    </div>  
+
+    <!-- Neste caso acima a prioridade é do css inline, mesmo existindo o css externo e interno -->
+
+
+    <h1 class="red">
+        Meu primeiro CSS
+    </h1>    
+
+    <!-- 
+    A prioridade neste caso está sendo do css interno, mas porque ? 
+    Sabemos que a ordem de prioridade é 1ºCSS inline, 2ºCSS interno e 3ºCSS externo.
+
+    Mas devido á um detalhe tudo muda, podemos ver que o css interno está com um seletor SIMPLES, enquanto no css externo o seletor é ESPECIFICO
+
+    Agora caso estivesse ambos com o seletor especifico, a ordem de prioridade seria do css interno
+
+
+    Lembrando que id=# TÊM MAIS PRIORIDADE COMPARADO COM A classe=.
+
+    ordem de prioridade:
+
+    - id    #
+    - classe    .
+    - seletores simples
+
+    Podemos colocar algo mais especifico ainda 
+
+    por exemplo:
+
+    .red{
+        color: red;
+    }
+
+    h1.red{
+        color: orange;
+    }
+
+    entre um ou outro o seletor de classe na qual tem o h1 antes terá mais prioridade do que simplesmente o seletor de class
+
+    ou seja 
+
+    1º seletor simples + seletor especifico - tem mais prioridades do que simplesmente seletores simples
+
+
+    caso aja vários seletores iguais a ordem preferêncial será o ultimo escrito
+    por exemplo:
+    
+    h1{
+        color: orange;
+    }
+    h1{
+        color: red;
+    }
+    h1{
+        color: blue;
+    }
+    -->
+
+    <!-- REGRA IMPORTANT-->
+
+    <!-- Serve para dizer ao navegador qual dos nossos seletores é mais importante, fazendo assim uma burla do sistema.-->
+
+    <h1 id="meudi" class="minhaclasse">
+        Vamos ver um exemplo de important
+    </h1>
+    
+    
+    
+</body>
+</html>

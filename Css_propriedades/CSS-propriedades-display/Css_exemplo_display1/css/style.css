@@ -1,0 +1,92 @@
+.azul{
+    background: blue;
+    display: inline-block;
+    width: 33%;
+    height: 150px;
+}
+
+.red{
+    background: red;
+    display: inline-block;
+    width: 33%;
+    height: 150px;
+}
+
+.verde{
+    background: green;
+    display: inline-block;
+    width: 33%;
+    height: 150px;
+}
+
+.ex1{
+    max-width: 800px; /* Determina o tamanho máximo da largura, determina o comportamento máximo */
+}
+
+.ex2{
+    max-width: 800px; /* Determina o tamanho máximo da largura, determina o comportamento máximo */
+}
+
+/* O uso do max-width é normalmente ultilizado para deixar o site responsivo */
+
+
+/*
+    Position: 
+
+    - estatic (padrão de toda tag)
+
+    - relative (após usar essa tag, você podera manipular a posição sem empurrar os outros elementos)
+
+    - fixed (idenpendente do movimento da tela o objeto irá permanecer onde está)
+
+    -absolute (trabalho em relação a seu antecessor, por exemplo, caso o objeto que tem um position absolute, esteja dentro de um container, o posicionamento dele irá comportar-se de acordo com o tamanho do container)
+
+    -sticky (com ose fosse algo pegajoso)
+*/
+
+.container{
+    position: relative;
+    display: inline-block;
+    background: blue;
+    width: 100%;
+    height: 400px;
+}
+
+.div1{
+    background: yellow;
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+    position: relative; /* pode ser manipulada sua posição usando, right, left, top, bottom. */
+    /* left: 60px; */
+    /* z-index: 0; "z-index", é usado para manipular os objetos na camada z, falando que está na frente ou atrás, funcionar apenas no "relative"*/
+}
+
+.div2{
+    background: rgb(23, 216, 71);
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+    position: sticky;
+    top: 0;
+}
+
+.div3{
+    background: red;
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+    position: absolute; /*Determina a posição em relação ao "pai" dela, ou seja, do container. o absolute irá funcionar apenas se o "pai" tiver qualquer position menos o static */
+    top: 150px;
+    right: 40%;
+}
+
+.whats{
+    background: green;
+    color: white;
+    width: 80px;
+    height: 80px;
+    position: fixed; /* O elemento em relação a tela, ele será fixo. */
+    bottom: 10px;
+    right: 10px;
+}

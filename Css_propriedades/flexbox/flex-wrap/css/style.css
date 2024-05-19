@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+.caveat-letra {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+/*
+    !FLEXBOX!
+
+    flex-direction -
+
+    flex-direction: row; (linha)
+    flex-direction: row-reverse; (linha reversa)
+    flex-direction: column; (coluna)
+    flex-direction: column-reverse; (coluna reversa)
+
+
+    justify-content -
+
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+
+
+    display_flex
+
+    - Identificar que a tag vai ser o container de flexbox
+
+    
+    flex-direction
+
+
+    -identificar qual vai ser o eixo principal e perpendicular
+
+    justify-content
+
+
+    -alinhar os elementos no eixo principal
+
+
+    align-items
+
+    -alinhar os elementos no eixo perpendicular
+*/
+body{
+    background-color: rgb(73, 21, 21);
+}
+
+.texto{
+    font-family: "Caveat", cursive;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 50px;
+}
+
+.container-flexwrap-nowrap{
+    background: bisque;
+    width: 100%;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    padding-bottom: 400px;
+    flex-wrap: nowrap;
+}
+
+.container-flexwrap-wrap{
+    background: bisque;
+    width: 100%;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    padding-bottom: 400px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-flexwrap-wrap-reverse{
+    background: bisque;
+    width: 100%;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    padding-bottom: 400px;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.bloco-1{
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: rgb(211, 241, 255);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.bloco-2{
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: rgb(255, 182, 249);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.bloco-3{
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: rgb(255, 151, 151);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+

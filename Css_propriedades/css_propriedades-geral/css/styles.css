@@ -1,0 +1,180 @@
+/*Propriedades no CSS*/
+/* importar font */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    background-color: bisque; /*Propriedade background-color: cor de fundo solida*/
+}
+
+h1{
+    color: #a81c13; /*Propriedade Color : cor da letra ou título*/
+    border: 1px solid black;
+    border-radius: 15px; /* propriedades para arredondar a borda*/
+    background: black;
+    color: antiquewhite;
+     
+    /* tipos de borda :solid, dashed, dotted, double, grove, ridge, inset, outset, none, hidden ;  exemplos de bordas*/
+
+    /*
+    border-left: 5px solid red;
+    border-right: 5px solid green;
+    border-bottom: 5px solid yellow;
+    border-top: 5px solid blue;
+    */
+
+    text-align: center;
+
+    margin-top: 15%; /* a parte de fora do elemento será afastada, você pode especificar o lado que você gostaria de afastar */
+    margin-bottom: 150px; /* pode usar tanto % ou pixel(px) */
+
+    /*se usar a propriedade, margin, podera usar mais rapido, exemplo, margin: topo, direita, baixo, esquerda, ou seja, margin: 40px, 0px, 150px, 0;*/
+
+    padding-top: 20px ; /* O mesmo conseito do margin, mas dentro do elemento */
+    padding-bottom: 20px ;
+
+    /* o mesmo pode ser usado apenas padding, padding: topo, direito, baixo, esquerda */
+
+    font-family: "Bebas Neue", sans-serif; /* fonte tirada do google fonts */
+    font-weight: bold; /* propriedades para colocar negrito, fino */
+    font-style: normal;
+    font-size: 80px;
+      
+}
+
+p{
+   /* width: 400px;  largura */
+   /* height: 100px;  altura */
+
+   font-family: monospace; /* a fonte da letra, as que vem definidas */
+   font-size: 20px;     /* tamanho das letras */
+   /* caso queria exportar alguma fonte externa use google fontes */
+   /* font-style, caso queria colocar em italico ou algo do tipo use essa propriedade*/
+}
+
+.exemplo-back{
+    height: 500px;
+    background-image: url("../img/pexels-ian-panelo-20108084.jpg") ; /* os dois pontos antes, na url é para voltar as pastas*/
+    background-size: cover; /* irá cobrir a imagem */
+    /*background-size: contain; serve para conter o espaço solicitado mas com a limitação do tamahno da imagem */ 
+    /*background-repeat: no-repeat;*/
+    /*background-repeat: repeat; Ao usar essa propriedade você ordena que repita a imagem caso ela não cubra todo expaço solicitado*/
+    /*background-repeat: repeat-x; vai repetir a imagem mas apenas no sentido horizontal*/
+    /*background-repeat: repeat-y; vai repetir a imagem mas apenas no sentido vertical*/
+    background-position: center; /*Ultilizado para mostrar qual posição da imagem */
+
+    /* background: color url repeat(or not) ; a propriedade background pode ser usada para colocar todos os parametros dentro poupando codigos */
+}   
+
+/* text-align tem várias propriedades, entre elas mais usadas:
+
+    -center
+    -left
+    -right
+    -justify
+
+    text-decoration bastante usado, por exemplo links que vem com linhas em baixo podemos usar
+    
+    text-decoration:
+    -none (tira toda a decoração da linha)
+    -overline (cria uma linha em baixo do texto)
+    -line-through (faz um riscado no meio do texto)
+    -underline (cria uma linha abaixo do texto)
+
+    direction:rtl; ( Inverter as letras )
+    unicode-bidi:bidi-override (Inverte as letras)
+    
+
+
+    
+    text-transform:
+    
+    -uppercase (coloca as letras todas maiusculas
+    -lowercase (colocar ou transforma todas as letras minusculas)
+    -capitalze (transforma a primeira letra minuscula 
+
+
+
+
+    text-ident (serve para dar o paragrafo no inicio do texto:
+
+    - colocar as medidas em "px"
+
+
+
+    letter-spacing (espaço entre as LETRAS):
+
+    - colocar as medidas em "px"
+
+
+
+    line-height (altura das linhas entre uma as outras):
+
+    - colocar as medidas em "px"
+
+
+
+    word-spacing (espaçamento entre PALAVRAS):
+
+    - colocar as medidas em "px"
+
+
+
+*/
+
+/* estilização de botões kkkkk */
+
+a.botao1:hover{
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border: 3px solid rgb(255, 0, 0);
+    border-radius: 30px;
+    color:black
+}
+
+a.botao1{
+    background: darkorchid;
+    color: aquamarine;
+    padding: 10px;
+    text-decoration: none;
+    border: 3px solid yellow;
+    border-radius: 30px;
+}
+
+a.botao2{
+    text-decoration: none;
+    padding:10px;
+    border: 5px double blue;
+    color: blue;
+}
+
+a.botao2:hover{
+    text-decoration: underline;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    background: blue;
+}
+
+a.botao3{
+    color: black;
+    text-decoration: none;
+}
+
+a.botao3:hover{
+    color: rgb(224, 0, 0);
+    border-bottom: 3px solid black;
+}
+
+a.botao4{
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+}
+a.botao4:hover{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+a.botao5{
+    cursor:pointer;  /* estilo do mouse */
+}

@@ -1,0 +1,49 @@
+.borda{
+    border: 1px solid red
+}
+
+/* Existe vários tipos de display, snedo eles block, inline, none (usado para desaparecer o elemento) */
+
+p{
+    display: inline;
+}
+
+h1{
+    display:inline;
+}
+
+li{
+    display: inline; /* Colocamos display:inline; devido que a propriedade "li" tem como original display:block; */
+
+    /* Uma coisa sobre a propriedade "inline":
+       
+       - Caso você esteja usando a propriedade inline e queira determinar uma altura/largura ou algo parecido, não ira funcionar devido que a propriedade "inline" ira ocupar o espaço que o conteúdo ocupa
+
+       - A unica forma dela comportar como um block é usando uma propriedade chamada "inline-block".
+       - Com essa propriedade o conteudo irá comportar como um inline e poderá ser manipulado da mesma forma que um display block.
+    */
+}
+
+.azul{
+    background: blue;
+}
+
+.vermelho{
+    background: red;
+}
+
+.verde{
+    background: green;
+}
+
+/*
+ Display 
+ - block
+ - Inline
+ - Inline-block
+ - none (o objeto desaparece/excluido)
+
+ visibility
+
+ -hidden (apenas está escondido)
+*/
