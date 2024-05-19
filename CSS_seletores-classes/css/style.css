@@ -1,0 +1,41 @@
+*{ /*Seletor Universal */
+    padding: 15px;
+}
+
+
+body{
+    background: #727272;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+p, h2{
+    color: rgb(255, 204, 141);
+}
+
+h1{
+    margin:0;
+}
+
+.center{
+    text-align: center;
+}
+
+.vermelho{
+    color: rgb(175, 0, 0);
+}
+
+.blue{
+    color: rgb(0, 0, 182);
+}
+
+.font{
+    font-size: 30px;
+}
+
+#teste{
+    color: blueviolet;
+    background-color: aqua;
+    width: 100%;
+}
+
